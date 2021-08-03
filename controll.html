@@ -5,7 +5,20 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylecontroll.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
-        <style>html {background: #E8FFFF;}</style>
+        <style>html {background: #E8FFFF;}
+        .content{
+            padding-top: 100px;
+            padding-left: 100px;
+            width: 2000px;
+        }
+        table, th, td {
+        border: 3px solid black;
+        border-collapse: collapse;
+        line-height: 50px;
+        padding: 5px;
+        padding-block: 10px;
+        }
+        </style>
     </head>
 	<body>
         <input type="checkbox" id="check">
@@ -18,7 +31,7 @@
                 <h3>SMART HOME <span>SYSTEM</span></h3>
             </div>
             <div class="right_area">
-                <a href="#" class="return_btn" target="_self">HOME</a>
+                <a href="home.html" class="return_btn" target="_self">HOME</a>
             </div>
             
         </header>
@@ -28,15 +41,48 @@
                 <img src="l.png" alt="" class="intro">
             </center>
                 <a href="infor.html" target="_self"><i class="fas fa-users"></i><span>Thành Viên Nhóm</span></a>
-                <a href="signup.php" target="_blank"><i class="fas fa-edit"></i><span>BẢNG ĐIỀU KHIỂN</span></a>
-                <a href="readadata.php" target="_blank"><i class="fas fa-desktop"></i><span>Giám Sát</span></a>
-                <a href="chartdemo.html"target="_blank"><i class="fal fa-chart-line"></i><span>CHART</span></a>
+                <a href="controll.html" target="_self"><i class="fas fa-edit"></i><span>BẢNG ĐIỀU KHIỂN</span></a>
+                <a href="chartdemo.html"target="_self"><i class="fal fa-chart-line"></i><span>CHART</span></a>
         </div>
         <div class = "content">
-
-
-
-
+            <form action="" id="form">
+            <table style="width:70%">
+                <tr>
+                  <th>DEVICE</th>
+                  <th colspan="2">AUTO MODE</th>
+                  <th colspan="2">MANUAL MODE</th> 
+                </tr>
+                <tr>
+                  <td>LIGHT</td>
+                  <td>Time On  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td>Time Off  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td><button type="submit" class="btn btn-primary">ON</button></td>
+                  <td>Off  <button type="submit" class="btn btn-primary">OFF</button></td>
+                </tr>
+                <tr>
+                  <td>AIR CONDITIONER</td>
+                  <td>Time On  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td>Time Off  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td><button type="submit" class="btn btn-primary">ON</button></td>
+                  <td>Off  <button type="submit" class="btn btn-primary">OFF</button></td>
+                </tr>
+                <tr>
+                  <td>CURTAIN</td>
+                  <td>Time On  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td>Time Off  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                  <td><button type="submit" class="btn btn-primary">ON</button></td>
+                  <td>Off  <button type="submit" class="btn btn-primary">OFF</button></td>
+                </tr>
+                <tr>
+                    <td>DOOR</td>
+                    <td>Time On  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                    <td>Time Off  <input type="time" class="form-control" name="ns" id="ngaysinh"></td>
+                    <td><button type="submit" class="btn btn-primary">ON</button></td>
+                    <td>Off  <button type="submit" class="btn btn-primary">OFF</button></td>
+                  </tr>
+              </table>
+            </form>
+            
         </div>
 	</body>
 </html>
