@@ -125,6 +125,7 @@ label #sidebar_btn:hover{
 #check {
     display: none;
 }
+
 #check:checked ~ .content{
     margin-left: 60px;
 }
